@@ -1,0 +1,41 @@
+@use "generales" as g;
+
+.main {
+    color: g.$parrafo;
+
+    .introduccion {
+        background-image: url("../../img/fondo-introduccion.webp");
+        min-height: 80vh;
+
+        .contenidoIntroduccion {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .botones{
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+
+    .secciones {
+        background-color: g.$fondoNegro;
+        min-height: 80vh;
+
+        .contenido {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            .pTitulo{
+                align-self: flex-start;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

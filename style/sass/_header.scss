@@ -1,0 +1,16 @@
+@use "generales" as g;
+
+header{
+    background-color: g.$fondoNegro;
+    color: g.$parrafo;
+    padding: 2rem;
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .navbar{
+            display: flex;
+            gap: 25px;
+        }
+    }
+}

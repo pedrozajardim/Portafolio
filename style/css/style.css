@@ -1,3 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+header {
+  background-color: #0a0a0f;
+  color: #a1a1aa;
+  padding: 2rem;
+}
+header .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .header .navbar {
+  display: flex;
+  gap: 25px;
+}
+
+.main {
+  color: #a1a1aa;
+}
+.main .introduccion {
+  background-image: url("../../img/fondo-introduccion.webp");
+  min-height: 80vh;
+}
+.main .introduccion .contenidoIntroduccion {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main .introduccion .contenidoIntroduccion .botones {
+  display: flex;
+  gap: 20px;
+}
+.main .secciones {
+  background-color: #0a0a0f;
+  min-height: 80vh;
+}
+.main .secciones .contenido {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.main .secciones .contenido .pTitulo {
+  align-self: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
 
 /*# sourceMappingURL=style.css.map */
