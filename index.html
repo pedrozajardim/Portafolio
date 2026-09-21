@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="./style/css/style.css">
 </head>
 
@@ -17,11 +20,11 @@
             <section>
                 <div>
                     <ul class="navbar">
-                        <li>Sobre mi</li>
-                        <li>Habilidades</li>
-                        <li>Proyectos</li>
-                        <li>Contacto</li>
-                        <button>CV</button>
+                        <a href="#sobreMi">Sobre mi</a>
+                        <a href="#stack">Stack Tecnólogco</a>
+                        <a href="#proyectos">Proyectos</a>
+                        <a href="#contacto">Contacto</a>
+                        <button class="btn btn-outline-info">CV</button>
                     </ul>
                 </div>
             </section>
@@ -30,65 +33,90 @@
     <main class="main">
         <section class="introduccion">
             <div class="contenidoIntroduccion">
-                <p>Disponible para trabajar</p>
-                <h1>Hola, soy Jesús Pedroza</h1>
-                <p>&lt;Frontend Developer /&gt; </p>
-                <p>Apasionado por el desarrollo frontend, completé mi formación en HTML, CSS, JavaScript y React en
-                    Coderhouse. Estoy construyendo mi portafolio con proyectos reales mientras busco mi primera
-                    oportunidad para crecer como desarrollador y aportar en un equipo.</p>
+                <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-circle-fill" viewBox="0 0 16 16">
+                        <circle cx="8" cy="8" r="8" class="text-success" />
+                    </svg>Disponible para trabajar</p>
+                <h1>Hola, soy <span class="nombre"><br>Jesús Pedroza</span> </h1>
+                <p class="p-frontdev">&lt;Frontend Developer /&gt; </p>
+                <p class="p-presentacion">Apasionado por el desarrollo frontend, completé mi formación en HTML, CSS,
+                    JavaScript y React en Coderhouse. Estoy construyendo mi portafolio con proyectos reales mientras
+                    busco mi primera oportunidad para crecer como desarrollador y aportar en un equipo.</p>
                 <div class="botones">
-                    <button>Ver proyectos</button>
-                    <button>Descargar CV</button>
+                    <a href="#proyectos" class="btn btn-dark">Ver proyectos</a>
+                    <button class="btn btn-outline-light">Descargar CV</button>
                 </div>
 
-                <p>Lima, Perú</p>
+                <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>Lima, Perú</p>
             </div>
         </section>
         <section class="secciones">
             <div class="contenido">
-                <p class="pTitulo">---Sobre mí</p>
-                <h2>Construyendo el futuro, una línea a la vez</h2>
-                <div>
-                    <p>Soy desarrollador frontend en formación, con certificación en HTML, CSS, JavaScript y React por
-                        Coderhouse. Vengo construyendo proyectos prácticos —desde landing pages hasta aplicaciones con
-                        consumo de datos y gestión de estado— mientras doy el salto hacia el desarrollo web como
-                        carrera.
-                    </p>
-                    <p>Me interesa especialmente crear interfaces limpias, funcionales y agradables de usar. Busco mi
-                        primera oportunidad como frontend developer para seguir creciendo y aportar valor desde el
-                        primer
-                        día</p>
-                </div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
+                <div class="divSobreMi">
                     <div>
-                        <h3>2</h3>
-                        <p>Proyectos completados</p>
-                    </div>
-                    <div>
-                        <h3>5+</h3>
-                        <p>Tecnologías dominadas</p>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                        <p>Certificaciones</p>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                        <p>Meses de práctica</p>
-                    </div>
-                </div>
+                        <p class="pTitulo" id="sobreMi"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                            </svg>Sobre mí</p>
+                        <h2>Construyendo el futuro, <span class="h2SobreMi">una línea a la vez</span> </h2>
+                        <div>
+                            <p>Soy desarrollador frontend en formación, con certificación en HTML, CSS, JavaScript y
+                                React por
+                                Coderhouse. Vengo construyendo proyectos prácticos —desde landing pages hasta
+                                aplicaciones con
+                                consumo de datos y gestión de estado— mientras doy el salto hacia el desarrollo web como
+                                carrera.
+                            </p>
+                            <p>Me interesa especialmente crear interfaces limpias, funcionales y agradables de usar.
+                                Busco mi
+                                primera oportunidad como frontend developer para seguir creciendo y aportar valor desde
+                                el
+                                primer
+                                día</p>
+                        </div>
+                        <div class="seccionesSobreMi">
+                            <div>
+                                <h3>2</h3>
+                                <p>Proyectos completados</p>
+                            </div>
+                            <div>
+                                <h3>5+</h3>
+                                <p>Tecnologías dominadas</p>
+                            </div>
+                            <div>
+                                <h3>3</h3>
+                                <p>Certificaciones</p>
+                            </div>
+                            <div>
+                                <h3>6</h3>
+                                <p>Meses de práctica</p>
+                            </div>
+                        </div>
+                        <div>
 
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./img/amana-gestor-veterinario.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <hr>
-        <section class="secciones">
+        <hr class="hr">
+        <section class="secciones" id="stack">
             <div class="contenido">
-                <p class="pTitulo">Stack tecnológico</p>
-                <h2>Herramientas que domino</h2>
-                <div>
+                <p class="pTitulo" id="habilidades"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                    </svg>Stack Tecnológico</p>
+                <h2>Herramientas que utilizo</h2>
+                <div class="herramientasUsadas">
                     <ul>
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -97,57 +125,128 @@
                         <li>React</li>
                         <li>Git & GitHub</li>
                     </ul>
+                    <ul class="stack">
+                        <li><i class="devicon-html5-plain colored"></i></li>
+                        <li><i class="devicon-css3-plain colored"></i></li>
+                        <li><i class="devicon-sass-original colored"></i></li>
+                        <li><i class="devicon-javascript-plain colored"></i></li>
+                        <li><i class="devicon-react-original colored"></i></li>
+                        <li><i class="devicon-github-original colored"></i></li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <hr>
+        <hr class="hr">
         <section class="secciones">
             <div class="contenido">
-                <p class="pTitulo">---Formación</p>
+                <p class="pTitulo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                    </svg>Formación</p>
                 <h2>Trayectoria académica</h2>
-                <div>
-                    <div>
-                        <p>Certificación</p>
-                        <h3>Certificación en HTML y CSS</h3>
-                        <p>Coder House</p>
+                <div class="trayectoria">
+                    <div class="seccionesTrayectoria">
+                        <div>
+                            <p>Certificación</p>
+                            <h3>Certificación en HTML y CSS</h3>
+                            <p>Coder House</p>
+                        </div>
+                        <div>
+                            <p>23/04/2026</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Certificación</p>
-                        <h3>Certificación en JavaScript</h3>
-                        <p>Coder House</p>
+                    <div class="seccionesTrayectoria">
+                        <div>
+                            <p>Certificación</p>
+                            <h3>Certificación en JavaScript</h3>
+                            <p>Coder House</p>
+                        </div>
+                        <div>
+                            <p>28/05/2026</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Certificación</p>
-                        <h3>Certificación en React</h3>
-                        <p>Coder House</p>
+                    <div class="seccionesTrayectoria">
+                        <div>
+                            <p>Certificación</p>
+                            <h3>Certificación en React</h3>
+                            <p>Coder House</p>
+                        </div>
+                        <div>
+                            <p>28/08/2026</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="secciones">
-
-        </section>
-        <section class="secciones">
+        <hr class="hr">
+        <section class="secciones" id="proyectos">
             <div class="contenido">
-                <p class="pTitulo">---Conctacto</p>
-                <h2>Hablemos de tu próximo proyecto o equipo</h2>
-                <p>Estoy buscando mi primera oportunidad profesional. Si crees que puedo aportar a tu equipo, escríbeme
-                    —
-                    respondo en menos de 24 horas.</p>
-                <a href="">jesusoctavio.pedroza@gmail.com</a>
-                <div>
-                    <a href="">GitHub</a>
-                    <a href="">LinkedIn</a>
-                    <a href="">Currículum</a>
+                <p class="pTitulo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-dash-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                    </svg>Proyectos</p>
+                <div class="c-proyectos">
+                    <div class="card" style="width: 30rem;">
+                        <img src="./img/amana-gestor-veterinario.png" class="card-img-top"
+                            alt="amana-gestor-veterinario">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatería Amaná (React)</h5>
+                            <p class="card-text">E-commerce de zapatería desarrollado en React + Vite, con Sass para
+                                estilos. Implementa enrutamiento con react-router-dom (rutas dinámicas con useParams),
+                                manejo de estado global del carrito con Context API + useReducer, fetch de datos de
+                                productos, y componentes reutilizables siguiendo el patrón container/presentational
+                                (ItemListContainer, ItemDetail, Cart, etc.).
+                            </p>
+                            <a href="http://zapateria-amana.vercel.app" class="btn btn-outline-light" target="_blank">Ir
+                                al proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30rem;">
+                        <img src="./img/amana-zapateria.png" class="card-img-top" alt="amana-zapateria">
+                        <div class="card-body">
+                            <h5 class="card-title">Software de Gestión Veterinaria (JavaScript nativo)</h5>
+                            <p class="card-text">Aplicación desarrollada como proyecto final del curso de JavaScript,
+                                aplicando los conceptos fundamentales del lenguaje sin frameworks. Gestiona tres áreas
+                                del negocio —veterinario,sala de baño (grooming) y ventas—, permitiendo registrar
+                                servicios y calcular el tiempo de atención según la hora de llegada y salida. El diseño
+                                visual fue trabajado con Sass.
+                            </p>
+                            <a href="http://gestor-de-veterinaria-8df50aox0.vercel.app" class="btn btn-outline-light"
+                                target="_blank">Ir al proyecto</a>
+                        </div>
+
+                    </div>
                 </div>
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="secciones" id="contacto">
+            <div class="contenido">
+                
+                    <p class="pTitulo"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-dash-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8" />
+                        </svg>Conctacto</p>
+                    <h2>Hablemos de tu próximo proyecto o equipo </h2>
+                    <p>Estoy buscando mi primera oportunidad profesional. Si crees que puedo aportar a tu equipo, escríbeme
+                        —
+                        respondo en menos de 24 horas.</p>
+                    <a href="mailto:jesusoctavio.pedroza@gmail.com" class="btn btn-outline-info">Enviame un correo</a>
+                    <div class="redes">
+                        <a href="">GitHub</a>
+                        <a href="">LinkedIn</a>
+                        <a href="">Currículum</a>
+                    </div>
             </div>
         </section>
     </main>
-    <hr>
     <footer>
         <p>© 2026 Jesús Pedroza</p>
         <p>Construido con HTML · CSS · JavaScript · Tailwind CSS</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

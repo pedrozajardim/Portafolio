@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "EB Garamond", serif;
 }
 
 header {
@@ -18,9 +20,29 @@ header .header .navbar {
   display: flex;
   gap: 25px;
 }
+header .header .navbar a {
+  text-decoration: none;
+  color: #a1a1aa;
+}
+header .header .navbar a:hover {
+  color: white;
+}
 
 .main {
   color: #a1a1aa;
+}
+.main a {
+  text-decoration: none;
+  color: #a1a1aa;
+}
+.main a:hover {
+  color: white;
+}
+.main .hr {
+  margin: 0;
+}
+.main h2 {
+  color: white;
 }
 .main .introduccion {
   background-image: url("../../img/fondo-introduccion.webp");
@@ -32,6 +54,20 @@ header .header .navbar {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+.main .introduccion .contenidoIntroduccion h1 {
+  font-size: 5rem;
+  color: white;
+}
+.main .introduccion .contenidoIntroduccion h1 .nombre {
+  color: #7b7fff;
+}
+.main .introduccion .contenidoIntroduccion .p-frontdev {
+  font-size: 2rem;
+}
+.main .introduccion .contenidoIntroduccion .p-presentacion {
+  font-size: 1.5rem;
+  max-width: 30rem;
 }
 .main .introduccion .contenidoIntroduccion .botones {
   display: flex;
@@ -53,6 +89,73 @@ header .header .navbar {
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  color: #7b7fff;
+}
+.main .secciones .contenido .divSobreMi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .secciones .contenido .divSobreMi .seccionesSobreMi {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main .secciones .contenido .divSobreMi .seccionesSobreMi h3 {
+  color: #7b7fff;
+}
+.main .secciones .contenido .divSobreMi img {
+  max-height: 25em;
+}
+.main .secciones .contenido .divSobreMi .h2SobreMi {
+  color: #7b7fff;
+}
+.main .secciones .contenido .c-proyectos {
+  display: flex;
+  gap: 60px;
+}
+.main .secciones .contenido .c-proyectos .card .card-img-top {
+  width: 100%;
+  height: 300px;
+}
+.main .secciones .contenido .c-proyectos .card .card-body {
+  background-image: url("../../img/fondo-introduccion.webp");
+  color: #a1a1aa;
+  text-align: center;
+}
+.main .secciones .contenido .herramientasUsadas ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  color: #7b7fff;
+}
+.main .secciones .contenido .herramientasUsadas .stack {
+  font-size: 3rem;
+}
+.main .secciones .contenido .trayectoria {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main .secciones .contenido .trayectoria .seccionesTrayectoria {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  background-color: #1e293b;
+  border-radius: 5%;
+}
+.main .secciones .contenido .trayectoria .seccionesTrayectoria h3 {
+  color: white;
+}
+.main .secciones .contenido .redes {
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  background-color: #0a0a0f;
+  color: #a1a1aa;
+  display: flex;
+  justify-content: space-around;
+  min-height: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "EB Garamond", serif;
 }
+
+
+
 
 $fondoNegro: #0a0a0f;
 $parrafo: #a1a1aa;
+$azul:#7b7fff;

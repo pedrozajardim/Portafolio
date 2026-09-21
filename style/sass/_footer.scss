@@ -1,0 +1,11 @@
+@use "generales" as g;
+
+
+footer{
+    background-color: g.$fondoNegro;
+    color: g.$parrafo;
+    display: flex;
+    justify-content: space-around;
+    min-height: 5rem;
+    
+}

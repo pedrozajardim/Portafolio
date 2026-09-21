@@ -3,6 +3,23 @@
 .main {
     color: g.$parrafo;
 
+    a {
+        text-decoration: none;
+        color: g.$parrafo;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    .hr {
+        margin: 0;
+    }
+
+    h2 {
+        color: white;
+    }
+
     .introduccion {
         background-image: url("../../img/fondo-introduccion.webp");
         min-height: 80vh;
@@ -13,7 +30,26 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            .botones{
+
+            h1 {
+                font-size: 5rem;
+                color: white;
+
+                .nombre {
+                    color: g.$azul;
+                }
+            }
+
+            .p-frontdev {
+                font-size: 2rem;
+            }
+
+            .p-presentacion {
+                font-size: 1.5rem;
+                max-width: 30rem;
+            }
+
+            .botones {
                 display: flex;
                 gap: 20px;
             }
@@ -30,12 +66,93 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            .pTitulo{
+
+            .pTitulo {
                 align-self: flex-start;
                 width: 100%;
                 display: flex;
                 justify-content: flex-start;
+                color: g.$azul;
+            }
+
+            .divSobreMi {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .seccionesSobreMi {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    h3 {
+                        color: g.$azul;
+                    }
+                }
+
+                img {
+                    max-height: 25em;
+                }
+
+                .h2SobreMi {
+                    color: g.$azul;
+                }
+            }
+
+            .c-proyectos {
+                display: flex;
+                gap: 60px;
+
+                .card {
+                    .card-img-top {
+                        width: 100%;
+                        height: 300px;
+                    }
+
+                    .card-body {
+                        background-image: url("../../img/fondo-introduccion.webp");
+                        color: g.$parrafo;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .herramientasUsadas {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 30px;
+                    color: g.$azul;
+                }
+
+                .stack {
+                    font-size: 3rem;
+                }
+
+            }
+
+            .trayectoria {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .seccionesTrayectoria {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 500px;
+                    background-color: #1e293b;
+                    border-radius: 5%;
+
+                    h3 {
+                        color: white;
+                    }
+                }
+
+            }
+
+            .redes{
+                display: flex;
+                gap: 20px;
             }
         }
     }
+
 }
