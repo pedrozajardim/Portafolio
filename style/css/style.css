@@ -9,7 +9,10 @@
 header {
   background-color: #0a0a0f;
   color: #a1a1aa;
-  padding: 2rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 header .header {
   display: flex;
@@ -141,6 +144,7 @@ header .header .navbar a:hover {
   width: 500px;
   background-color: #1e293b;
   border-radius: 5%;
+  padding: 1rem;
 }
 .main .secciones .contenido .trayectoria .seccionesTrayectoria h3 {
   color: white;

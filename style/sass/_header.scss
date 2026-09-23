@@ -1,21 +1,28 @@
 @use "generales" as g;
 
-header{
+header {
     background-color: g.$fondoNegro;
     color: g.$parrafo;
-    padding: 2rem;
-    .header{
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    .header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        .navbar{
+
+        .navbar {
             display: flex;
             gap: 25px;
-            a{
+
+            a {
                 text-decoration: none;
                 color: g.$parrafo;
             }
-            a:hover{
+
+            a:hover {
                 color: white;
             }
         }
