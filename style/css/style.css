@@ -210,7 +210,7 @@ header .header .navbar a:hover {
     flex-direction: column;
   }
   .main .secciones .contenido .divSobreMi img {
-    max-height: 25em;
+    max-height: 6em;
     max-width: 100%;
     height: auto;
   }
@@ -254,6 +254,10 @@ header .header .navbar a:hover {
   .main .secciones .contenido .trayectoria .seccionesTrayectoria {
     width: 220px;
     padding: 0.5rem;
+  }
+  .main .secciones .contenido .trayectoria div {
+    min-width: 0;
+    word-wrap: break-word;
   }
 }
 
