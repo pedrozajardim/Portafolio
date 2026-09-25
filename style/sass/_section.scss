@@ -22,7 +22,7 @@
 
     .introduccion {
         background-image: url("../../img/fondo-introduccion.webp");
-        min-height: 80vh;
+        min-height: 50vh;
 
         .contenidoIntroduccion {
             padding: 2rem;
@@ -160,21 +160,25 @@
 
     @include g.mobile {
 
-        h2{
+        h2 {
             font-size: 1.5rem;
         }
-        h3{
+
+        h3 {
             font-size: 1.2rem;
         }
-        p{
+
+        p {
             font-size: 1rem;
         }
-        a{
+
+        a {
             font-size: 1rem;
         }
 
         .introduccion {
             min-height: 50vh;
+
             .contenidoIntroduccion {
                 p {
 
@@ -196,7 +200,7 @@
                     font-size: 1rem;
                 }
 
-                .botones{
+                .botones {
                     display: none;
                 }
             }
@@ -204,9 +208,10 @@
 
         .secciones {
             min-height: 50vh;
+
             .contenido {
 
-                .pTitulo{
+                .pTitulo {
                     font-size: 1.2rem;
                 }
 
@@ -214,10 +219,17 @@
                     display: flex;
                     flex-direction: column;
 
+                    img {
+                        max-height: 25em;
+                        max-width: 100%;
+                        height: auto; 
+                    }
+
 
                     .seccionesSobreMi {
                         display: flex;
                         flex-direction: column;
+
                     }
                 }
 
@@ -228,14 +240,22 @@
                     .card {
                         width: 15rem;
 
-                        .card-img-top{
+                        .card-img-top {
                             height: 150px;
                         }
-                        h5{
+
+                        h5 {
                             font-size: 1rem;
                         }
-                        a{
+
+                        a {
                             font-size: 0.5rem;
+                        }
+
+                        .card-body {
+                            .card-text {
+                                font-size: 0.5rem;
+                            }
                         }
                     }
                 }
@@ -260,7 +280,7 @@
                     gap: 1rem;
 
                     .seccionesTrayectoria {
-                        width: 200px;
+                        width: 220px;
                         padding: 0.5rem;
                     }
                 }

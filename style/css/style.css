@@ -60,7 +60,7 @@ header .header .navbar a:hover {
 }
 .main .introduccion {
   background-image: url("../../img/fondo-introduccion.webp");
-  min-height: 80vh;
+  min-height: 50vh;
 }
 .main .introduccion .contenidoIntroduccion {
   padding: 2rem;
@@ -209,6 +209,11 @@ header .header .navbar a:hover {
     display: flex;
     flex-direction: column;
   }
+  .main .secciones .contenido .divSobreMi img {
+    max-height: 25em;
+    max-width: 100%;
+    height: auto;
+  }
   .main .secciones .contenido .divSobreMi .seccionesSobreMi {
     display: flex;
     flex-direction: column;
@@ -229,6 +234,9 @@ header .header .navbar a:hover {
   .main .secciones .contenido .c-proyectos .card a {
     font-size: 0.5rem;
   }
+  .main .secciones .contenido .c-proyectos .card .card-body .card-text {
+    font-size: 0.5rem;
+  }
   .main .secciones .contenido .herramientasUsadas {
     display: flex;
   }
@@ -244,7 +252,7 @@ header .header .navbar a:hover {
     gap: 1rem;
   }
   .main .secciones .contenido .trayectoria .seccionesTrayectoria {
-    width: 200px;
+    width: 220px;
     padding: 0.5rem;
   }
 }
