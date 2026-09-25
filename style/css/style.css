@@ -218,16 +218,16 @@ header .header .navbar a:hover {
     gap: 20px;
   }
   .main .secciones .contenido .c-proyectos .card {
-    width: 12rem;
+    width: 15rem;
   }
   .main .secciones .contenido .c-proyectos .card .card-img-top {
-    height: 100px;
+    height: 150px;
   }
   .main .secciones .contenido .c-proyectos .card h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .main .secciones .contenido .c-proyectos .card a {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
   .main .secciones .contenido .herramientasUsadas {
     display: flex;
@@ -244,7 +244,7 @@ header .header .navbar a:hover {
     gap: 1rem;
   }
   .main .secciones .contenido .trayectoria .seccionesTrayectoria {
-    width: 150px;
+    width: 200px;
     padding: 0.5rem;
   }
 }
@@ -259,7 +259,8 @@ footer {
 
 @media (max-width: 767px) {
   p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    padding: 1rem;
   }
 }
 
