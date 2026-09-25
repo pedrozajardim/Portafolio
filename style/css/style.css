@@ -169,35 +169,41 @@ header .header .navbar a:hover {
 }
 @media (max-width: 767px) {
   .main h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .main h3 {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   .main p {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .main a {
-    font-size: 0.5rem;
+    font-size: 1rem;
+  }
+  .main .introduccion {
+    min-height: 50vh;
   }
   .main .introduccion .contenidoIntroduccion p .icono-disponible {
     width: 6px;
     height: 6px;
   }
   .main .introduccion .contenidoIntroduccion h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .main .introduccion .contenidoIntroduccion .p-frontdev {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .main .introduccion .contenidoIntroduccion .p-presentacion {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .main .introduccion .contenidoIntroduccion .botones {
     display: none;
   }
+  .main .secciones {
+    min-height: 50vh;
+  }
   .main .secciones .contenido .pTitulo {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   .main .secciones .contenido .divSobreMi {
     display: flex;
@@ -218,10 +224,10 @@ header .header .navbar a:hover {
     height: 100px;
   }
   .main .secciones .contenido .c-proyectos .card h5 {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   .main .secciones .contenido .c-proyectos .card a {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .main .secciones .contenido .herramientasUsadas {
     display: flex;
@@ -229,10 +235,10 @@ header .header .navbar a:hover {
   .main .secciones .contenido .herramientasUsadas ul {
     flex-direction: column;
     gap: 30px;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .main .secciones .contenido .herramientasUsadas .stack {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .main .secciones .contenido .trayectoria {
     gap: 1rem;
