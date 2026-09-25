@@ -30,6 +30,17 @@ header .header .navbar a {
 header .header .navbar a:hover {
   color: white;
 }
+@media (max-width: 767px) {
+  header .header .navbar {
+    display: none;
+  }
+  header .header p {
+    font-size: 0.5rem;
+  }
+  header .btn-cv {
+    font-size: 0.5rem;
+  }
+}
 
 .main {
   color: #a1a1aa;
@@ -115,6 +126,9 @@ header .header .navbar a:hover {
   display: flex;
   gap: 60px;
 }
+.main .secciones .contenido .c-proyectos .card {
+  width: 30rem;
+}
 .main .secciones .contenido .c-proyectos .card .card-img-top {
   width: 100%;
   height: 300px;
@@ -153,6 +167,81 @@ header .header .navbar a:hover {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 767px) {
+  .main h2 {
+    font-size: 1.2rem;
+  }
+  .main h3 {
+    font-size: 0.8rem;
+  }
+  .main p {
+    font-size: 0.5rem;
+  }
+  .main a {
+    font-size: 0.5rem;
+  }
+  .main .introduccion .contenidoIntroduccion p .icono-disponible {
+    width: 6px;
+    height: 6px;
+  }
+  .main .introduccion .contenidoIntroduccion h1 {
+    font-size: 2rem;
+  }
+  .main .introduccion .contenidoIntroduccion .p-frontdev {
+    font-size: 1rem;
+  }
+  .main .introduccion .contenidoIntroduccion .p-presentacion {
+    font-size: 0.5rem;
+  }
+  .main .introduccion .contenidoIntroduccion .botones {
+    display: none;
+  }
+  .main .secciones .contenido .pTitulo {
+    font-size: 0.7rem;
+  }
+  .main .secciones .contenido .divSobreMi {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .secciones .contenido .divSobreMi .seccionesSobreMi {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .secciones .contenido .c-proyectos {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main .secciones .contenido .c-proyectos .card {
+    width: 12rem;
+  }
+  .main .secciones .contenido .c-proyectos .card .card-img-top {
+    height: 100px;
+  }
+  .main .secciones .contenido .c-proyectos .card h5 {
+    font-size: 0.7rem;
+  }
+  .main .secciones .contenido .c-proyectos .card a {
+    font-size: 0.5rem;
+  }
+  .main .secciones .contenido .herramientasUsadas {
+    display: flex;
+  }
+  .main .secciones .contenido .herramientasUsadas ul {
+    flex-direction: column;
+    gap: 30px;
+    font-size: 0.5rem;
+  }
+  .main .secciones .contenido .herramientasUsadas .stack {
+    font-size: 0.5rem;
+  }
+  .main .secciones .contenido .trayectoria {
+    gap: 1rem;
+  }
+  .main .secciones .contenido .trayectoria .seccionesTrayectoria {
+    width: 150px;
+    padding: 0.5rem;
+  }
+}
 
 footer {
   background-color: #0a0a0f;
@@ -160,6 +249,12 @@ footer {
   display: flex;
   justify-content: space-around;
   min-height: 5rem;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

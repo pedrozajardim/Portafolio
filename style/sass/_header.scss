@@ -27,4 +27,18 @@ header {
             }
         }
     }
+
+    @include g.mobile {
+        .header {
+            .navbar {
+                display: none;
+            }
+            p{
+                font-size: 0.5rem;
+            }
+        }
+        .btn-cv{
+            font-size: 0.5rem;
+        }
+    }
 }

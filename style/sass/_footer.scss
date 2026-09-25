@@ -9,3 +9,9 @@ footer{
     min-height: 5rem;
     
 }
+
+@include g.mobile{
+    p{
+        font-size: 0.5rem;
+    }
+}
