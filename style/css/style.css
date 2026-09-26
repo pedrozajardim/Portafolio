@@ -118,6 +118,8 @@ header .header .navbar a:hover {
 }
 .main .secciones .contenido .divSobreMi img {
   max-height: 25em;
+  max-width: 100%;
+  height: auto;
 }
 .main .secciones .contenido .divSobreMi .h2SobreMi {
   color: #7b7fff;
@@ -252,7 +254,8 @@ header .header .navbar a:hover {
     gap: 1rem;
   }
   .main .secciones .contenido .trayectoria .seccionesTrayectoria {
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     padding: 0.5rem;
   }
   .main .secciones .contenido .trayectoria div {

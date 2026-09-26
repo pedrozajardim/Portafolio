@@ -17,7 +17,7 @@ $azul:#7b7fff;
 
 
 @mixin mobile{
-    @media (max-width: 767px){
+    @media (min-width:320PX)  and (max-width: 767px){
         @content;
     }
 }
@@ -27,3 +27,5 @@ $azul:#7b7fff;
         @content;
     }
 }
+
+

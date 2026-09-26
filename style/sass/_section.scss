@@ -90,6 +90,8 @@
 
                 img {
                     max-height: 25em;
+                    max-width: 100%;
+                    height: auto;
                 }
 
                 .h2SobreMi {
@@ -280,7 +282,8 @@
                     gap: 1rem;
 
                     .seccionesTrayectoria {
-                        width: 220px;
+                        width: 100%;
+                        max-width: 220px;
                         padding: 0.5rem;
                     }
 
