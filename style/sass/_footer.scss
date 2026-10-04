@@ -8,6 +8,9 @@ footer{
     justify-content: space-around;
     min-height: 5rem;
     
+    p{
+        font-size: 1.25rem;
+    }
 }
 
 @include g.mobile{

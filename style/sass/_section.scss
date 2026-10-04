@@ -6,6 +6,7 @@
     a {
         text-decoration: none;
         color: g.$parrafo;
+        font-size: 1.5rem;
     }
 
     a:hover {
@@ -18,6 +19,19 @@
 
     h2 {
         color: white;
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.5rem;
     }
 
     .introduccion {
@@ -45,7 +59,6 @@
             }
 
             .p-presentacion {
-                font-size: 1.5rem;
                 max-width: 30rem;
             }
 
@@ -76,26 +89,62 @@
             }
 
             .divSobreMi {
+                width: 100%;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+                gap: 2rem;
+                align-items: center;
 
-                .seccionesSobreMi {
-                    display: flex;
-                    justify-content: space-evenly;
-
-                    h3 {
-                        color: g.$azul;
-                    }
-                }
-
-                img {
-                    max-height: 25em;
-                    max-width: 100%;
-                    height: auto;
+                p {
+                    font-size: 1.5rem;
                 }
 
                 .h2SobreMi {
                     color: g.$azul;
+                }
+
+                .seccionesSobreMi {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    gap: 20px;
+                    margin-top: 1.5rem;
+
+                    h5 {
+                        color: g.$azul;
+                        font-size: 2rem;
+                    }
+
+                    .card {
+                        width: 18rem;
+
+                        .card-body {
+                            background-color: #0f1024;
+                            border: 1px solid rgba(124, 131, 255, 0.12);
+                            border-radius: 16px;
+
+                            h5 {
+                                color: g.$azul;
+                            }
+
+                            p {
+                                color: g.$parrafo;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+
+                .imagen {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        max-height: 25em;
+                        max-width: 100%;
+                        height: auto;
+                    }
                 }
             }
 
@@ -120,17 +169,34 @@
             }
 
             .herramientasUsadas {
-                ul {
-                    list-style: none;
-                    display: flex;
-                    gap: 30px;
-                    color: g.$azul;
-                }
-
                 .stack {
-                    font-size: 3rem;
-                }
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    list-style: none;
+                    padding: 0;
 
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.5rem;
+                        color: g.$azul;
+
+                        i {
+                            font-size: 3.5rem;
+                        }
+
+                        span {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .devicon-github-original {
+                        color: white;
+                    }
+                }
             }
 
             .trayectoria {
@@ -150,7 +216,6 @@
                         color: white;
                     }
                 }
-
             }
 
             .redes {
@@ -163,27 +228,29 @@
     @include g.mobile {
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         h3 {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         a {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
 
         .introduccion {
             min-height: 50vh;
 
             .contenidoIntroduccion {
-                p {
+                padding: 0.5rem;
+                gap: 10px;
 
+                p {
                     .icono-disponible {
                         width: 6px;
                         height: 6px;
@@ -195,11 +262,11 @@
                 }
 
                 .p-frontdev {
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
                 }
 
                 .p-presentacion {
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
 
                 .botones {
@@ -212,42 +279,50 @@
             min-height: 50vh;
 
             .contenido {
+                padding: 0.5rem;
+                gap: 10px;
 
                 .pTitulo {
-                    font-size: 1.2rem;
+                    font-size: 1.8rem;
                 }
 
                 .divSobreMi {
                     display: flex;
                     flex-direction: column;
+                    gap: 10px;
 
-                    img {
-                        max-height: 6em;
-                        max-width: 100%;
-                        height: auto;
+                    .imagen {
+                        img{
+                            max-height: 10rem;
+                            max-width: 80%;
+                        }
                     }
 
-
                     .seccionesSobreMi {
-                        display: flex;
-                        flex-direction: column;
+                        gap:  10px;
+                        display:grid;
+                        grid-template-columns: 1fr 1fr;
 
+
+                        .card {
+                            width: 100%;
+                        }
                     }
                 }
 
                 .c-proyectos {
                     flex-direction: column;
-                    gap: 20px;
+                    gap: 10px;
 
                     .card {
-                        width: 15rem;
+                        width: 100%;
 
                         .card-img-top {
-                            height: 150px;
+                            height: 200px;
                         }
 
                         h5 {
-                            font-size: 1rem;
+                            font-size: 1.6rem;
                         }
 
                         a {
@@ -255,26 +330,28 @@
                         }
 
                         .card-body {
+                            a {
+                                font-size: 1.5rem;
+                            }
+
                             .card-text {
-                                font-size: 0.5rem;
+                                font-size: 1.5rem;
                             }
                         }
                     }
                 }
 
                 .herramientasUsadas {
-                    display: flex;
-
-                    ul {
-                        flex-direction: column;
-                        gap: 30px;
-                        font-size: 1rem;
-
-                    }
-
                     .stack {
+                        gap: 1.5rem;
 
-                        font-size: 1rem;
+                        li i {
+                            font-size: 3rem;
+                        }
+
+                        li span {
+                            font-size: 1.2rem;
+                        }
                     }
                 }
 
@@ -295,5 +372,4 @@
             }
         }
     }
-
 }
