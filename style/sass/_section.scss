@@ -293,12 +293,13 @@
 
                     .imagen {
                         img{
-                            max-height: 10rem;
-                            max-width: 80%;
+                            max-height: 20rem;
+                            max-width: 100%;
                         }
                     }
 
                     .seccionesSobreMi {
+                        padding: 1rem;
                         gap:  10px;
                         display:grid;
                         grid-template-columns: 1fr 1fr;
@@ -360,7 +361,6 @@
 
                     .seccionesTrayectoria {
                         width: 100%;
-                        max-width: 220px;
                         padding: 0.5rem;
                     }
 
