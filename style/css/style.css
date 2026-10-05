@@ -278,10 +278,10 @@ header .nav-link:hover {
     gap: 10px;
   }
   .main .secciones .contenido .c-proyectos .card {
-    width: 100%;
+    width: 300px;
   }
   .main .secciones .contenido .c-proyectos .card .card-img-top {
-    height: 200px;
+    display: none;
   }
   .main .secciones .contenido .c-proyectos .card h5 {
     font-size: 1.6rem;

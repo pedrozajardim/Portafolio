@@ -277,34 +277,27 @@
 
         .secciones {
             min-height: 50vh;
-
             .contenido {
                 padding: 0.5rem;
                 gap: 10px;
-
                 .pTitulo {
                     font-size: 1.8rem;
                 }
-
                 .divSobreMi {
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
-
                     .imagen {
-                        img{
+                        img {
                             max-height: 20rem;
                             max-width: 100%;
                         }
                     }
-
                     .seccionesSobreMi {
                         padding: 1rem;
-                        gap:  10px;
-                        display:grid;
+                        gap: 10px;
+                        display: grid;
                         grid-template-columns: 1fr 1fr;
-
-
                         .card {
                             width: 100%;
                         }
@@ -314,27 +307,21 @@
                 .c-proyectos {
                     flex-direction: column;
                     gap: 10px;
-
                     .card {
-                        width: 100%;
-
+                        width: 300px;
                         .card-img-top {
-                            height: 200px;
+                            display: none;
                         }
-
                         h5 {
                             font-size: 1.6rem;
                         }
-
                         a {
                             font-size: 0.5rem;
                         }
-
                         .card-body {
                             a {
                                 font-size: 1.5rem;
                             }
-
                             .card-text {
                                 font-size: 1.5rem;
                             }
