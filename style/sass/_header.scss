@@ -1,19 +1,44 @@
 @use "generales" as g;
 
 header {
-    background-color: g.$fondoNegro;
+    background-color: g.$Fondo;
     color: g.$parrafo;
-    padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    max-height: 60px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-    a{
-        font-size: 1.25rem;
+
+    .navbar-brand {
+        color: g.$Primario;
+        font-size: 14px;
+
+        .punto {
+            color: g.$Texto;
+        }
+
+        .dev {
+            color: g.$Secundario;
+        }
+
+        &:hover,
+        &:focus {
+            color: g.$Primario;
+        }
+
+        &:active{
+            color: g.$Texto;
+        }
     }
 
-    li{
-        font-size: 1.25rem;
+    a {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
     }
 
     .nav-link {
@@ -22,5 +47,9 @@ header {
         &:hover {
             color: white;
         }
+    }
+
+    .btnCv {
+        font-size: 16px;
     }
 }

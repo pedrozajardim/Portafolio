@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+$fuenteBase: "Plus Jakarta Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "EB Garamond", serif;
+}
+
+body{
+    font-family: $fuenteBase;
 }
 
 
@@ -15,15 +20,28 @@ $fondoNegro: #0a0a0f;
 $parrafo: #a1a1aa;
 $azul:#7b7fff;
 
+$Fondo : #09090f;
+$Texto : #f0f0f5;
+$Tarjeta :#0f0f1c;
+$Primario: #818cf8 ;
+$Acento: #22d3ee;
+$Indigo: #6366f1;
+$FondoSuave: #1a1a2e;
+$Secundario: #8b8ba8 ;
+$Borde: rgba(255,255,255,.08) ;
+$VerdeDisponibilidad: #4ade80 ;
+
+
+
 
 @mixin mobile{
-    @media (min-width:320PX)  and (max-width: 767px){
+    @media (min-width:390PX)  and (max-width: 768px){
         @content;
     }
 }
 
 @mixin tablet{
-    @media (min-width: 768px) and (max-width: 1024px){
+    @media (min-width: 768px) and (max-width: 1023px){
         @content;
     }
 }
